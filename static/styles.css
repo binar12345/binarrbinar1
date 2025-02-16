@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Canvas for Matrix Effect */
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place behind other content */
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 1rem;
+    position: relative; /* Ensure navbar is above the canvas */
+    z-index: 1;
+    border-bottom: 2px solid #0F0; /* Neon green border */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0F0 !important; /* Neon green color */
+    text-shadow: 0 0 5px #0F0, 0 0 10px #0F0; /* Glow effect */
+}
+
+.nav-link {
+    color: #0F0 !important; /* Neon green color */
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-shadow: 0 0 5px #0F0, 0 0 10px #0F0; /* Glow effect */
+}
+
+.nav-link:hover {
+    color: #00FF00 !important; /* Brighter green on hover */
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    border: 2px solid #0F0; /* Neon green border */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green glow */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Ensure card is above the canvas */
+    z-index: 1;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background */
+    color: #0F0; /* Neon green color */
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    text-shadow: 0 0 5px #0F0, 0 0 10px #0F0; /* Glow effect */
+}
+
+.card-body {
+    padding: 0;
+}
+
+/* Video Container Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #0F0; /* Neon green color */
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    border-top: 2px solid #0F0; /* Neon green border */
+    position: relative; /* Ensure footer is above the canvas */
+    z-index: 1;
+    text-shadow: 0 0 5px #0F0, 0 0 10px #0F0; /* Glow effect */
+}
+
+.highlight {
+    color: #0F0; /* Neon green color */
+    font-weight: bold;
+    text-shadow: 0 0 5px #0F0, 0 0 10px #0F0; /* Glow effect */
+}
+
+/* Social Media Section */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: #0F0; /* Neon green color */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #00FF00; /* Brighter green on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    .nav-link {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    .card-header {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .card {
+        margin-top: 1rem; /* Less margin for mobile */
+    }
+
+    .footer {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+
+    .social-media {
+        gap: 1rem; /* Reduce gap between icons for mobile */
+    }
+
+    .social-icon {
+        font-size: 1.2rem; /* Smaller icons for mobile */
+    }
+}
